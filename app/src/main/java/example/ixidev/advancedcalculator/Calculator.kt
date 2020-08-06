@@ -4,21 +4,11 @@ import java.util.*
 import java.util.regex.Pattern
 import kotlin.collections.ArrayList
 
-/**
- * Created by ABDELMAJID ID ALI on 19/06/2020.
- * Email : abdelmajid.idali@gmail.com
- * Github : https://github.com/ixiDev
- */
 class Calculator {
-    /**
-     * a regular expression ( Regex ) to split mathematical expression element by element
-     * example : 2+4-6/8.9+83 split it to list of elements (tokens) -> ["2","+","4","-","6","/","8.9","+","83"]
-     */
+
     private val parse_tokens_regex = "([()])|(\\d+(\\.\\d+)?)|([+*×÷/-])"
 
-    /**
-     * mathematical expression that will be calcul
-     */
+
     private var expression: String = ""
 
     /**
